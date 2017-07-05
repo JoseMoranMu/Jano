@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Jano</string>
+    <string name="titleHome">Home</string>
+    <string name="titleEarning">Earning</string>
+    <string name="titleExpense">Expense</string>
+    <string name="titleConfig">Config</string>
 </resources>
