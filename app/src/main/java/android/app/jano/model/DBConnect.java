@@ -106,7 +106,6 @@ public class DBConnect extends SQLiteOpenHelper {
     }
 
     //EXPENSE
-    
     public void addExpense(Expense expense){
         SQLiteDatabase sqlConfig;
         sqlConfig = this.getWritableDatabase();
@@ -140,20 +139,23 @@ public class DBConnect extends SQLiteOpenHelper {
         }
         sqlConfig.close();
     }
-    /**
+
     public void showData(){
-        String name;
+        String date,description;
+        double value;
         Cursor c;
         SQLiteDatabase sqlConfig;
         sqlConfig = this.getReadableDatabase();
-        c = sqlConfig.rawQuery("SELECT * FROM category", null);
+        c = sqlConfig.rawQuery("SELECT * FROM expense", null);
         if(c.moveToFirst()) {
             do{
-                name = c.getString(0);
-                System.out.println("Name: " + name);
+                value = c.getDouble(1);
+                date = c.getString(2);
+                description = c.getString(3);
+                System.out.println("Value: " + value+", Description: "+description+", Date: "+date);
             }while(c.moveToNext());
             c.close();
         }
     }
-     **/
+
 }

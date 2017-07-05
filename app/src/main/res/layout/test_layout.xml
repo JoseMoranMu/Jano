@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_width="286dp"
+        android:layout_height="219dp"
+        android:layout_weight="1.39" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="370dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Description" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="372dp"
+        android:layout_height="60dp"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:text="Show" />
+
+</LinearLayout>
