@@ -14,6 +14,7 @@ public class Earning {
     Category category;
 
     public Earning() {
+
     }
 
     public int getId() {

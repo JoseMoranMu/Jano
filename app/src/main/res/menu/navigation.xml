@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_earning"
+        android:icon="@drawable/ic_action_earning" app:showAsAction="ifRoom"
+        android:title="@string/titleEarning" />
+
+    <item
+        android:id="@+id/navigation_expense"
+        android:icon="@drawable/ic_action_expense" app:showAsAction="ifRoom"
+        android:title="@string/titleExpense" />
+
+    <item
+        android:id="@+id/navigation_config"
+        android:icon="@drawable/ic_action_config" app:showAsAction="ifRoom"
+        android:title="@string/titleConfig" />
+</menu>
