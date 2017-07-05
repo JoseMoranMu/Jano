@@ -7,6 +7,7 @@ import java.util.Date;
  */
 
 public class Earning {
+    int id;
     double value;
     String description;
     Date date;

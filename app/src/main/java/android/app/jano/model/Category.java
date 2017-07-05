@@ -5,6 +5,7 @@ package android.app.jano.model;
  */
 
 public class Category {
+    int id;
     String name;
     String image;
 
