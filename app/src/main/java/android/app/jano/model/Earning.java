@@ -16,6 +16,14 @@ public class Earning {
     public Earning() {
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public Earning(double value, String description, Date date, Category category) {
         this.value = value;
         this.description = description;
