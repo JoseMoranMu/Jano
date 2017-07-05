@@ -5,6 +5,7 @@ package android.app.jano.model;
  */
 
 public class Category {
+
     int id;
     String name;
     String image;
@@ -16,6 +17,15 @@ public class Category {
         this.name = name;
         this.image = image;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
     public String getName() {
         return name;
