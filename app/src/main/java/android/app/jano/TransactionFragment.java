@@ -8,21 +8,21 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by olgacoll on 5/7/17.
+ * Created by olgacoll on 6/7/17.
  */
 
-public class ExpenseFragment extends Fragment{
+public class TransactionFragment extends Fragment {
 
-    public static final String TAG = "ExpenseFragment";
+    public static final String TAG = "TransactionFragment";
 
-    public ExpenseFragment(){
+    public TransactionFragment(){
 
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_expense, container, false);
+        View view = inflater.inflate(R.layout.activity_transaction, container, false);
         return view;
     }
 }

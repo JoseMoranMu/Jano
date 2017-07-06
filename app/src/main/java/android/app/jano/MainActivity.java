@@ -1,10 +1,7 @@
 package android.app.jano;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -14,7 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -89,9 +85,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new EarningFragment(), "ONE");
-        adapter.addFragment(new ExpenseFragment(), "TWO");
-        adapter.addFragment(new ConfigFragment(), "THREE");
+        adapter.addFragment(new HistoricFragment(), "HISTORIAL");
+        adapter.addFragment(new StatisticFragment(), "ESTADISTICAS");
+        adapter.addFragment(new ConfigFragment(), "TRANSACCIONES");
         viewPager.setAdapter(adapter);
     }
 
